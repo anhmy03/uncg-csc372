@@ -92,7 +92,7 @@ nav ul li a:hover {
 }
 
 /* Featured Games */
-#homepage {
+#homepage, #category-page {
     flex: 1;
 }
 
@@ -178,3 +178,20 @@ footer a {
 footer p {
     margin-top: 10px;
 }
+
+.cart-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.cart-count {
+    position: absolute;
+    
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 3px 7px;
+}
+

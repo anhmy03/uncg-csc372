@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DivineGame</title>
+    <title>Adventure Games - DivineGame</title>
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <!-- Header with navigation menu -->
+    <!-- Header -->
     <header>
         <img src="image/divine.png" alt="DivineGame Logo" class="logo">
         <h1>DivineGame</h1>
@@ -21,21 +21,20 @@
                     <img src="image/cart-icon.png" alt="Cart" class="cart-icon">
                     <span class="cart-count">0</span>
                 </a>
-            </ul>
         </nav>
     </header>
 
     <!-- Page Description -->
     <section id="page-description">
         <div class="pd">
-            <p>DivineGame is a platform where gamers can find their favorite games with many options, available for any console.</p>
+            <p>Embark on thrilling journeys filled with exploration, puzzles, and rich storytelling
+
+            </p>
         </div>        
     </section>
 
-    <!-- Main content area with Sidebar -->
+    <!-- Main Content -->
     <main class="main-container">
-
-        
         <!-- Sidebar -->
         <aside class="sidebar">
             <h2>Categories</h2>
@@ -49,34 +48,42 @@
             </ul>
         </aside>
 
-        
         <!-- Main Content -->
-        <section id="homepage">
-                <!-- Search Bar -->
-                <div class="search-container">
-                    <i class="search-icon"></i>
-                    <input type="text" id="searchBar" placeholder="Search for a game..." onkeyup="searchGames()">
-                </div>  
-            <h2>Featured Games</h2>
+        <section id="category-page">
+            <!-- Search Bar -->
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="searchBar" placeholder="Search for an action game..." onkeyup="searchGames()">
+            </div>  
 
-            
-
-            <div class="game-grid" id="gameGrid">
-                <div class="game">
-                    <h3>Fall Guys</h3>
-                    <img src="image/hogwartslegacy.jpg" alt="Hogwarts Legacy">
-                    <p>Price: $49.99</p>
-                    <a href="#">View Details</a>
-                </div>
-                <div class="game">
-                    <h3>Paper Bride</h3>
-                    <img src="image/paperbride.jpg" alt="Paper Bride">
-                    <p>Price: $4.99</p>
-                    <a href="#">View Details</a>
-                </div>
-                
+        <h2>Adventure Games</h2>
+        
+        <div class="game-grid">
+            <div class="game">
+                <h3>The Legend of Zelda: Breath of the Wild</h3>
+                <img src="image/zelda.jpg" alt="Zelda">
+                <p>Price: $49.99</p>
+                <a href="#">View Details</a>
             </div>
-        </section>
+            <div class="game">
+                <h3>Uncharted 4</h3>
+                <img src="image/uncharted4.jpg" alt="Uncharted 4">
+                <p>Price: $29.99</p>
+                <a href="#">View Details</a>
+            </div>
+            <div class="game">
+                <h3>Tomb Raider</h3>
+                <img src="image/tombraider.jpg" alt="Tomb Raider">
+                <p>Price: $19.99</p>
+                <a href="#">View Details</a>
+            </div>
+            <div class="game">
+                <h3>Red Dead Redemption 2</h3>
+                <img src="image/rdr2.jpg" alt="Red Dead Redemption 2">
+                <p>Price: $39.99</p>
+                <a href="#">View Details</a>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -85,6 +92,5 @@
         <a href="#">Contact Us</a>
         <p>&copy; 2025 DivineGame. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
