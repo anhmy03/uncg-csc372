@@ -1,0 +1,180 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-description {
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: #333;
+    border-radius: 5px;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #444;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #ffcc00;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #666;
+}
+
+.sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Featured Games */
+#homepage {
+    flex: 1;
+}
+
+h2 {
+    color: #ffcc00;
+}
+
+/* Search Bar */
+.search-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 16px;
+}
+
+/* Game Grid */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.game {
+    background: #333;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.game img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 5px;
+}
+
+.game h3 {
+    margin: 10px 0;
+    color: #ffcc00;
+}
+
+.game a {
+    display: block;
+    background: #ffcc00;
+    color: #333;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.game a:hover {
+    background: #ccaa00;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer p {
+    margin-top: 10px;
+}
