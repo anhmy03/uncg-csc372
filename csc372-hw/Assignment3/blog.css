@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+#introduction {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#introduction p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.restaurant {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dishes img {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.dishes img:hover {
+    transform: scale(1.5);
+}
+
+#selected-dish {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    display: none;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+aside {
+    text-align: center;
+    margin-top: 20px;
+}
+
+aside a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+aside a:hover {
+    background-color: #0056b3;
+}

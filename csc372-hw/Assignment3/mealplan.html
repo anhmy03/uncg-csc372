@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+    Name: Viet Nguyen
+    Date: 02/18/2025
+    CSC 372-01
+    
+    This page for processing what-if scenarios for meal plans. It includes a list of dishes and the ability 
+    to add them to a meal plan.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+    <link rel="stylesheet" href="mealplan.css">
+    <script src="mealplan.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Build Your Meal Plan</h1>
+        <a href="blog.html">Back to Home</a>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Recommended Dishes</h2>
+            <ul id="dish-list">
+                <li data-name="Hot Dog" data-price="1.80">Hot Dog - $1.80 <button class="add">Add</button></li>
+                <li data-name="Ice Cream" data-price="2.25">Ice Cream - $2.25 <button class="add">Add</button></li>
+                <li data-name="Sundae" data-price="3.90">Sundae - $3.90 <button class="add">Add</button></li>
+                <li data-name="Creme Brulee Brown Sugar Milktea" data-price="9.00">Creme Brulee Brown Sugar Milktea - $9.00 <button class="add">Add</button></li>
+                <li data-name="Matcha Latte" data-price="7.50">Matcha Latte - $7.50 <button class="add">Add</button></li>
+                <li data-name="Taro Milk Tea" data-price="8.70">Taro Milk Tea - $8.70 <button class="add">Add</button></li>
+                <li data-name="Red Dragon" data-price="13.00">Red Dragon - $13.00 <button class="add">Add</button></li>
+                <li data-name="Rainbow Roll" data-price="12.50">Rainbow Roll - $12.50 <button class="add">Add</button></li>
+                <li data-name="Hot Night Roll" data-price="13.50">Hot Night Roll - $13.50 <button class="add">Add</button></li>
+            </ul>
+        </section>
+        <section id="meal-plan">
+            <h2>Your Meal Plan</h2>
+            <ul id="selected-dishes"></ul>
+            <p>Total: $<span id="total-price">0.00</span></p>
+        </section>
+    </main>
+</body>
+</html>

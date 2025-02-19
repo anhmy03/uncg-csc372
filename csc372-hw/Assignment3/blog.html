@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+    Name: Viet Nguyen
+    Date: 02/18/2025
+    CSC 372-01
+    
+    This is page for food and drink recommendations near UNCG. It includes a list of restaurants and their must-try dishes.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNCG Food Recommendations</title>
+    <link rel="stylesheet" href="blog.css">
+    <script defer src="blog.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Best Food & Drink Near UNCG</h1>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <p>Do you love exploring new flavors and finding the best meals on campus? You're in the right place!
+                We've put together a selection of must-try dishes that will satisfy your cravings. From delicious sushi
+                to indulgent ice cream, there's something for everyone. Get ready to embark on a tasty adventure
+                and discover some amazing eats!</p>
+        </section>
+
+            <section id="recommendations" class="flex-container">
+                <article class="restaurant">
+                    <h2>Yum Yum Better Ice Cream</h2>
+                    <h4>Address: 1219 Spring Garden St, Greensboro, NC 27403
+                    </h4>
+                    <p>A legendary hot dog and ice cream shop that has been a student favorite for decades.</p>
+                    <div class="dishes">
+                        <img src="image/hotdog.jpg" alt="Hot Dog" class="dish" data-name="Hot Dog" data-price="1.80">
+                        <img src="image/icecream.jpg" alt="Ice Cream" class="dish" data-name="Ice Cream" data-price="2.25">
+                        <img src="image/milkshake.jpg" alt="Sundae" class="dish" data-name="Sundae" data-price="3.90">
+                    </div>
+                </article>
+
+                <article class="restaurant">
+                    <h2>Gong Cha</h2>
+                    <h4>Address: 344 Tate St, Greensboro, NC 27403
+                    </h4>
+                    <p>A popular milk tea shop offering a variety of customizable drinks.</p>
+                    <div class="dishes">
+                        <img src="image/bruleemilktea.jpg" alt="Creme Brulee Brown Sugar Milktea" class="dish"
+                            data-name="Creme Brulee Brown Sugar Milktea" data-price="9.00">
+                        <img src="image/matchalatte.jpg" alt="Matcha Latte" class="dish" data-name="Matcha Latte"
+                            data-price="7.50">
+                        <img src="image/taro.png" alt="Taro Milk Tea" class="dish" data-name="Taro Milk Tea"
+                            data-price="8.70">
+                    </div>
+                </article>
+
+                <article class="restaurant">
+                    <h2>Sushi Republic</h2>
+                    <h4>Address: 329 Tate St, Greensboro, NC 27403 </h4>
+                    <p>A sushi restaurant known for its fresh and delicious rolls.</p>
+                    <div class="dishes">
+                        <img src="image/reddragon.jpg" alt="Red Dragon" class="dish" data-name="Red Dragon"
+                            data-price="13.00">
+                        <img src="image/rainbow.jpg" alt="Rainbow Roll" class="dish" data-name="Rainbow Roll"
+                            data-price="12.50">
+                        <img src="image/hotnight.jpg" alt="Hot Night Roll" class="dish" data-name="Hot Night Roll"
+                            data-price="13.50">
+                    </div>
+                </article>
+            </section>
+
+        <section id="selected-dish" class="hidden">
+            <h3 id="dish-name"></h3>
+            <p id="dish-price"></p>
+        </section>
+    </main>
+
+    <aside>
+        <a href="mealplan.html">Go to Meal Plan</a>
+    </aside>
+</body>
+
+</html>
