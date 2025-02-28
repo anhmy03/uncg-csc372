@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+    Name: Viet Nguyen
+    Date: 02/28/2025
+    CSC 372-01
+
+    This is the admin-product page for the term project
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Product List</title>
+    <link rel="stylesheet" href="styles/admin.css">
+</head>
+<body>
+    <header class="admin-nav">
+        <div class="logo">DivineGame Admin</div>
+        <nav>
+            <ul>
+                <li><a href="admin-upload.html">Bulk Upload</a></li>
+                <li><a href="admin-products.html">Product Listing</a></li>
+                <li><a href="index.html" class="logout-btn">Sign Out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="image/sample-game.jpg" alt="Sample Game"></td>
+                    <td>Sample Game</td>
+                    <td>$19.99</td>
+                    <td>RPG</td>
+                    <td>
+                        <a href="product-edit.html"><button>Edit</button></a>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

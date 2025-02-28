@@ -1,0 +1,41 @@
+<!-- Admin Bulk Upload Page -->
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+    Name: Viet Nguyen
+    Date: 02/28/2025
+    CSC 372-01
+
+    This is the admin-upload page for the term project
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Bulk Upload</title>
+    <link rel="stylesheet" href="styles/admin.css">
+</head>
+<body>
+    <header class="admin-nav">
+        <div class="logo">DivineGame Admin</div>
+        <nav>
+            <ul>
+                <li><a href="admin-upload.html">Bulk Upload</a></li>
+                <li><a href="admin-products.html">Product Listing</a></li>
+                <li><a href="index.html" class="logout-btn">Sign Out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Upload Product Data</h2>
+            <p>Upload a JSON, CSV, or TXT file with product data.</p>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" accept=".json,.csv,.txt">
+                <button type="submit">Upload</button>
+            </form>
+            <h3>Example JSON Format:</h3>
+            <pre>{ "products": [ { "name": "Game Title", "price": 19.99, "category": "RPG" } ] }</pre>
+        </section>
+    </main>
+</body>
+</html>
