@@ -9,7 +9,7 @@ function playerChoice(playerMove) {
     document.querySelectorAll('.choices img').forEach(img => img.classList.remove('selected'));
     event.target.classList.add('selected');
 
-    let choices = ['rock', 'paper', 'scissors'];
+    let choices = ['image/rock', 'image/paper', 'image/scissors'];
     let computerImg = document.getElementById('computer-choice');
     let index = 0;
     let shuffleInterval = setInterval(() => {
@@ -58,6 +58,6 @@ function resetGame() {
     localStorage.clear();
     updateScore();
     document.querySelector('.result').textContent = "Make your move!";
-    document.getElementById('computer-choice').src = 'question-mark.png';
+    document.getElementById('computer-choice').src = 'image/question-mark.png';
     document.querySelectorAll('.choices img').forEach(img => img.classList.remove('selected'));
 }
