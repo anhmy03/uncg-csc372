@@ -9,18 +9,18 @@ function playerChoice(playerMove) {
     document.querySelectorAll('.choices img').forEach(img => img.classList.remove('selected'));
     event.target.classList.add('selected');
 
-    let choices = ['image/rock', 'image/paper', 'image/scissors'];
+    let choices = ['rock', 'paper', 'scissors'];
     let computerImg = document.getElementById('computer-choice');
     let index = 0;
     let shuffleInterval = setInterval(() => {
-        computerImg.src = choices[index] + '.png';
+        computerImg.src = 'image/' + choices[index] + '.png';
         index = (index + 1) % 3;
     }, 500);
 
     setTimeout(() => {
         clearInterval(shuffleInterval);
         let computerMove = choices[Math.floor(Math.random() * 3)];
-        computerImg.src = computerMove + '.png';
+        computerImg.src = 'image/' + computerMove + '.png';
         determineWinner(playerMove, computerMove);
     }, 3000);
 }
